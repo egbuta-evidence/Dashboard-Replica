@@ -8,6 +8,11 @@ console.log("hello Evidence  good to have you today"); // any variable that has 
 
 // console.log(1 + 1);
 
+// 12345678
+// 01234567
+
+// javascript is a Zero based index langueage
+
 // variable declaration
 // let name = "Promise";
 
@@ -93,10 +98,43 @@ console.log(typeof bigNumber);
 
 // object === ans object is a make up of properties
 
-let person = {
+const person = {
   name: "Promise",
   isOutstanding: true,
   age: 15,
+  status: null,
 };
 
-console.log(person.name);
+const continent = {
+  africa: {
+    countries: {
+      west: ["Nigeria", "Ghana"],
+      south: ["South-africa"],
+    },
+  },
+  asia: {
+    countries: {
+      west: ["China", "India"],
+      south: ["Mongolia"],
+    },
+  },
+};
+continent.africa.countries.west[2] = "Tanzania";
+// object
+console.log(continent);
+
+// array is a java script property that allows the storage of multiple value to a single variable
+const item = [
+  "bags",
+  "shoes",
+  "clothes",
+  1,
+  false,
+  { name: "promise", age: 10 },
+  null,
+];
+let result = item;
+
+item[7] = "Evidence";
+
+console.log(result);
