@@ -98,13 +98,6 @@ console.log(typeof bigNumber);
 
 // object === ans object is a make up of properties
 
-const person = {
-  name: "Promise",
-  isOutstanding: true,
-  age: 15,
-  status: null,
-};
-
 const continent = {
   africa: {
     countries: {
@@ -121,7 +114,6 @@ const continent = {
 };
 continent.africa.countries.west[2] = "Tanzania";
 // object
-console.log(continent);
 
 // array is a java script property that allows the storage of multiple value to a single variable
 const item = [
@@ -133,8 +125,188 @@ const item = [
   { name: "promise", age: 10 },
   null,
 ];
-let result = item;
+// let result = item;
 
 item[7] = "Evidence";
 
-console.log(result);
+// console.log(result);
+
+//  objects and arrays
+
+let items = ["shoes", "bags", "clothes"];
+
+items[3] = "ring";
+
+// console.log(items);
+
+// console.log(items[1]);
+
+// spread operator
+let fruits = ["mango", "apples", "banana"];
+
+let girs = ["destiny", "favour", "Evidence"];
+let boys = ["james", "obi", "charles"];
+
+let reSult = [...girs, ...boys];
+
+// console.log(reSult);
+
+let newFruites = [...fruits, "watermelon"];
+
+let person = {
+  name: "Promise",
+  isOutstanding: true,
+  age: 15,
+  status: null,
+};
+
+let siblings = {
+  brother: "james",
+  sister: "Amaka",
+};
+
+let newPerson = { ...person, ...siblings };
+
+let changedPerson = { ...newPerson, accountBalance: BigInt(21828283838282) };
+
+// the delete helps remove an value form the object property
+// delete person.sex;
+
+// console.log(changedPerson);
+
+// Destructuring
+// let { status, age } = person;
+
+// let { brother, sister } = siblings;
+
+// console.log(brother);
+
+// let property = ["Money", "Houses", "Cars"];
+
+// let [ThridValue, secondValue, firstValue] = property;
+
+// console.log(firstValue);
+
+// array methods
+// object methods
+
+let val; // undefined
+// camel casing
+
+// let #name = '' wrong
+//  let 2 = '' wrong
+//  let + = '' worng
+//  let _user = 'tolu' good
+//  let userName  = 'something' camel casing
+
+//  pascal casing
+// let
+
+// string methods
+// number methods
+
+// string method
+
+// length property returns the number of characters in a string
+
+// val = "Evidence";
+
+// let result = val.length;
+
+// toUpperCase() coverts all letters to uppercase
+
+// val = "promise";
+// result = val.toUpperCase();
+// console.log(result);
+
+// toLowerCase() converts all letters to lowercase
+// val = "PROMISE";
+
+// result = val.toLowerCase();
+
+// console.log(result);
+
+// concactination adding of sting values
+
+// let firstName = "promise";
+// let lastName = " richard";
+// let intro = "my name is ";
+
+// Template string
+
+// let fullName = intro + firstName + lastName;
+// let modifiedFullName = `my name is ${firstName} ${lastName} i am a developer`;
+
+// console.log(fullName);
+// console.log(modifiedFullName);
+
+// charAt() method returns the character at a specific position via the index number
+// val = "James";
+// let result = val.charAt(3);
+// console.log(result);
+
+// indexOf() find the position of the first occurence of a character or word "if position is not found it automatically returns -1"
+
+// val = "I love JavaScript";
+// result = val.indexOf("J");
+// console.log(result);
+
+// lastIndexOf() find the position of the last occurence of a character or word "if position is not found it automatically returns -1"
+// val = "I lovel JavaScriptJ";
+// result = val.lastIndexOf("l");
+// console.log(result);
+
+// includes() checks if a string contains a specific word of character , returns true or false
+
+// val = "Banana hate";
+// let result = val.includes("hate");
+// console.log(result);
+
+// startsWith() checks if a string starts with a specific word or character or letter or alphabet, returns true or false
+
+// val = "Portharcourt";
+// let result = val.startsWith("P");
+// console.log(result);
+
+// endsWith() checks if a string ends with a specific word or character or letter or alphabet, returns true or false
+// val = "Portharcourt";
+// let result = val.endsWith("P");
+// console.log(result);
+
+// slice(start,end) extracts part of a string
+// val = "javaScript";
+// let result = val.slice(4);
+// console.log(result);
+
+// substring() same as slice
+
+// replace(oldvalue, newValue) it replaces characters in a string
+// val = "Promise is a good tutor";
+// let result = val.replace("good tutor", "worst tutor ever");
+// console.log(result);
+
+// trim() removes extra spaces form both ends of a string
+// val = "      promise       ";
+// let result = val.trim();
+// console.log(result);
+
+// trimStart() removes spaces from the start
+// val = "      promise       ";
+// let result = ` hello ${val.trimStart()} how are u`;
+// console.log(result);
+
+// trimEnd() removes spaces form the end
+// val = "      promise       ";
+// let result = `hello ${val.trimEnd()} how are u`;
+// console.log(result);
+
+// split(separator) Breaks a sting into an array based on the seperator
+// val = "Apple,Banana ,orange ,mango";
+// let result = val.split(",");
+// console.log(result);
+
+// toString() converts datatypes to string
+// val = 200;
+// let result = val.toString();
+// let result = String(val);
+// console.log(typeof result);
