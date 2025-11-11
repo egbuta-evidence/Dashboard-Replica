@@ -310,3 +310,103 @@ let val; // undefined
 // let result = val.toString();
 // let result = String(val);
 // console.log(typeof result);
+
+// number methods
+
+// number method rounds up numbers
+// val = "1";
+// let resullt = Number(1.4);
+
+// console.log(val);
+
+// toFixed() rounds up number to fixed value and returns a string
+
+// val = 9.5548484;
+// let result = val.toFixed();
+
+// console.log(typeof result);
+
+// toPrecision() formats a number to a specific length
+// val = 3.123456;
+// let result = val.toPrecision(5);
+// console.log(result);
+
+// valueOf()  returns a primitive value
+// val = 50;
+// console.log(typeof val.valueOf());
+
+// isNaN() checks if a value is not a number
+// val = 20;
+// let result = Number.isNaN(val);
+// console.log(result);
+
+// perseInt() converts a string to a number
+// val = "20";
+// let result = parseInt(val);
+// console.log(typeof result);
+
+// perseFloat() converts a string to a decimal
+// val = "12.6";
+// let result = parseFloat(val);
+// console.log(result);
+
+// Number() converts other data types to a number "if covert a boolean it returns either 1 or 0 , true retuns 1, false return 0"
+// val = Number(false);
+// console.log(val);
+
+// maths methods
+// maths.Cos(), Math.sin(), Math.tan(),  Math.log()
+
+// val = Math.tan(30);
+// console.log(val);
+
+// Math.round() approximates decimals
+
+// val = 4.5;
+// let result = Math.round(val);
+// console.log(result);
+
+// Math.floor() approximats downwards
+// val = 4.9;
+// let result = Math.floor(val);
+// console.log(result);
+
+// Math.ceil() approximats upwards
+// val = 4.1;
+// let result = Math.ceil(val);
+// console.log(result);
+
+// Math.trunc() removes the decimal part , leaving only the integers
+
+// val = 1.344;
+// let result = Math.trunc(val);
+// console.log(result);
+
+// Math.pow(x,y) takes in two arguments
+// val = Math.pow(10, 2);
+// console.log(val);
+
+// Math.sqrt()
+
+// val = 16;
+// console.log(Math.sqrt(100));
+
+// Math.absolute() returns a positive value always
+
+// val = -2;
+// console.log(Math.abs(val));
+
+// Math.max() return the greatest mumber
+
+// val = Math.max(1, 3, 5, 200);
+// console.log(val);
+// Math.min() return the smallest number
+
+// val = Math.min(3, 5, 200);
+// console.log(val);
+
+// Math.random() returns a random number between 0 and 1
+// val = Math.random();
+// console.log(val);
+// val = Math.floor(Math.random() * 101);
+// console.log(val);
