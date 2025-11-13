@@ -410,3 +410,38 @@ let val; // undefined
 // console.log(val);
 // val = Math.floor(Math.random() * 101);
 // console.log(val);
+
+// non primitive data types
+// object
+// arrays
+// function is javascript non primitive data type,,its block of code that contains an alghorithm(its a seqence of instructions to carry a task)
+// properties of a function
+// declaration
+// function name
+// parameters or arguments
+// function block
+// return key word
+
+function greetUser(personName) {
+  const greeting = `hello welcome to my website ${personName}`;
+  const fireUser = `u are fired ${personName}`;
+  return greeting;
+}
+
+let result = greetUser("Promise");
+
+console.log(result);
+
+function doMaths(value1, value2) {
+  const add = value1 + value2;
+  const divide = value1 / value2;
+  const random = Math.floor(Math.random() * value1);
+  const subtract = value1 - value2;
+  const squareRoot = Math.sqrt(value1);
+  return random;
+}
+
+result = doMaths(10, 20);
+console.log(result);
+
+// // method is a predifined function
