@@ -422,15 +422,15 @@ let val; // undefined
 // function block
 // return key word
 
-function greetUser(personName) {
-  const greeting = `hello welcome to my website ${personName}`;
-  const fireUser = `u are fired ${personName}`;
-  return greeting;
-}
+// function greetUser(personName) {
+//   const greeting = `hello welcome to my website ${personName}`;
+//   const fireUser = `u are fired ${personName}`;
+//   return greeting;
+// }
 
-let result = greetUser("Promise");
+// let result = greetUser("Promise");
 
-console.log(result);
+// console.log(result);
 
 function doMaths(value1, value2) {
   const add = value1 + value2;
@@ -441,7 +441,165 @@ function doMaths(value1, value2) {
   return random;
 }
 
-result = doMaths(10, 20);
-console.log(result);
+// result = doMaths(10, 20);
+// console.log(result);
 
-// // method is a predifined function
+// funtion
+
+// function greetPerson(personName) {
+//   console.log(personName);
+//   alert("you are welcome to my site ");
+// }
+
+// greetPerson("user");
+
+// self calling function
+// (function (person) {
+//   let result = `you are welcome ${person}`;
+//   return console.log(result);
+// })("James");
+
+// let calculate = function () {
+//   return 5;
+// };
+
+// let result = calculate();
+// console.log(result);
+
+// arrow function
+
+// let doSOmething = (person) => {
+//   let result = `you are welcome ${person}`;
+//   return console.log(result);
+// };
+
+// doSOmething("Admin");
+
+// conditionals (if and else statement)
+// tenary opperator(a short way of writing conditonals)
+// and means && , or ||
+
+// let vlaue = "3";
+// let loggedIn = true;
+// let fruit = "mango";
+// fruit = "banana";
+// fruit = "apple";
+// fruit = "watermellon";
+
+// let applicantAge = 14;
+
+// applicantAge = 26;
+
+// if (applicantAge <= maximumAge || applicantAge >= minimumAge) {
+//   let result = `welcome you of age range`;
+//   console.log(result);
+// } else {
+//   let result = `sorry ${applicantAge} is out of range , you can not apply`;
+//   console.log(result);
+// }
+
+// if (fruit === "mango") {
+//   console.log("the fruit is mango ");
+// } else if (fruit === "apple") {
+//   console.log("the fruit is now apple");
+// } else if (fruit === "banana") {
+//   console.log("the fruit is now banana");
+// } else {
+//   console.log("sorry the fruit does not exist here");
+// }
+
+// assignment
+// == base check/compare ,  === strict check/compare
+// ! means "ISnOT" "FALSE"
+
+// if (vlaue !== "2") {
+//   console.log("you are correct");
+// } else {
+//   console.log("you are wrong");
+// }
+
+// if (1 > 0) {
+//   console.log("true");
+// } else {
+//   console.log("false");
+// }
+
+// tenary operator
+
+// let color = "Black";
+
+// color === "Blue"
+//   ? console.log(" the color is blue")
+//   : console.log("the color is not blue");
+// let minimumAge = 16;
+
+// let maximumAge = 25;
+// function checkAge(applicantAge) {
+
+//   if (applicantAge <= maximumAge && applicantAge >= minimumAge) {
+//     let result = `welcome you of age range`;
+//     console.log(result);
+//   } else {
+//     let result = `sorry ${applicantAge} is out of range , you can not apply`;
+//     console.log(result);
+//   }
+// }
+
+// checkAge(30);
+
+// checkAge(16);
+// checkAge(10);
+
+//  (array methods)
+items = ["shoe", "bags", "clothes"];
+// itemS.pop();
+
+// pop() remove from the end of an array
+
+// let result = itemS.pop();
+// console.log(itemS);
+// console.log(result);
+
+// push() adds to the end of an array
+
+// items.push("cash");
+// console.log(items);
+
+// shift() removes from the begining of an array
+
+// items.shift();
+// console.log(items);
+// let result = items.shift();
+// console.log(result);
+
+// unShift() adds to the begining of an array
+
+// items.unshift("cash");
+// console.log(items);
+
+// concat() joins an array
+
+// let a = [1, 2];
+// let b = [3, 4];
+
+// let c = a.concat(b);
+
+// console.log(c);
+
+// slice() copy part of the array (does not change the origainal array
+
+// let letters = ["a", "b", "c", "d", "e", "f"];
+
+// let part = letters.slice(1, 4);
+
+// console.log(letters);
+
+// console.log(part);
+
+// includes() checks the array and returns a boolean
+
+// let names = ["james", "john", "peter"];
+
+// let result = names.includes("sam");
+
+// console.log(result);
