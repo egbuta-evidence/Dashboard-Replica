@@ -603,3 +603,86 @@ items = ["shoe", "bags", "clothes"];
 // let result = names.includes("sam");
 
 // console.log(result);
+
+// sort() sort items in the array
+// let numbers = [2, 3, 5, 1];
+
+// let result = numbers.sort();
+
+// console.log(result);
+
+// reverse() reverse the sort order
+
+// let numbers = [1, 2, 4, 5];
+// let result = numbers.reverse();
+// console.log(result);
+
+// find() finds the first item that matches
+// let numbers = [1, 3, 4, 10];
+// let result = numbers.find((n) => n < 4);
+
+// console.log(result);
+
+// every() checks if every items matches a condition returns a boolean
+// let scores = [20, 40, 50];
+
+// let result = scores.every((scores) => scores > 40);
+// console.log(result);
+
+// some() checks if at least of the array item matches the condition returns a boolean
+
+// let scores = [20, 40, 50];
+
+// let result = scores.some((scores) => scores > 40);
+// console.log(result);
+
+// filter() picks and return  only items that meets condition
+// let ages = [10, 20, 30];
+
+// let adults = ages.filter((age) => age >= 18);
+
+// console.log(adults);
+
+// loops
+
+// for loop
+// while loop
+// do while loop
+
+// for loop
+// properties
+// declaration (for)
+// argument (1,declaration, 2: condition , 3: stopper/break statement)
+// execution block
+
+// increment and decrement
+
+// increment
+// let tesT = 1;
+// tesT++;
+// console.log(tesT);'
+
+// decrement
+// let tesT = 1;
+// tesT--;
+// console.log(tesT);
+
+// for (let i = 0; i <= 5; i++) {
+//   console.log(i);
+//   console.log("heloo world");
+// }
+
+// let number = 11;
+// while
+
+// while (number <= 10) {
+//   console.log(number);
+//   number++;
+// }
+
+// do while
+
+// do {
+//   console.log(number);
+//   number++;
+// } while (number < 10);
