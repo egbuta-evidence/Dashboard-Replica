@@ -27,7 +27,7 @@ console.log("hello Evidence  good to have you today"); // any variable that has 
 
 // console.log(user);
 
-// let and const are the mordern variable declaration keyword
+// let and const are the mordern variable declaration keywordqqqqqqqqqqqqqqqqqqq
 // var is the old depreciated variable declaration keyword during the es5 version
 
 // the let keyword allow future change in its value
