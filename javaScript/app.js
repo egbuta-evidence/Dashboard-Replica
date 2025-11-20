@@ -441,8 +441,8 @@ function doMaths(value1, value2) {
   return random;
 }
 
-// result = doMaths(10, 20);
-// console.log(result);
+result = doMaths(10, 20);
+console.log(result);
 
 // funtion
 
