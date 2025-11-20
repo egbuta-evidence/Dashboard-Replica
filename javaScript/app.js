@@ -686,3 +686,55 @@ items = ["shoe", "bags", "clothes"];
 //   console.log(number);
 //   number++;
 // } while (number < 10);
+//
+
+// window.alert()
+// window.prompt()
+// window.alert("hello world");463873
+
+// const testing = window.prompt("hello put in you number");
+
+// console.log(typeof testing);
+
+// project
+// atm simulator
+
+function AtmMachineSimulator() {
+  let balance = 5000;
+  let running = true;
+
+  while (running) {
+    let option = prompt(
+      "WELCOME TO EVIDENCE MONEY MAKING MACHINE:\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit"
+    );
+    if (option === "1") {
+      alert(`Your balance is #${balance}`);
+    } else if (option === "2") {
+      let amount = Number(prompt("Enter amount to deposit"));
+      if (amount > 0) {
+        balance += amount;
+        alert(`Deposit  successful! New balance : #${balance}`);
+      } else {
+        alert("Invalid deposit amount");
+      }
+    } else if (option === "3") {
+      let amount = Number(prompt("Enter amount to withdraw"));
+      if (amount <= 0) {
+        alert("Invalid withdrawal amount");
+      } else if (amount > balance) {
+        alert("Insufficient funds!");
+      } else {
+        balance -= amount;
+        alert(`Widthdrawal successful! New balance: #${balance}`);
+      }
+    } else if (option === "4") {
+      alert("Thank you for using Evidence Atm machine");
+      running = false;
+    } else {
+      alert(
+        "Invalid option , please carry your wahala and go dont come and spoil my atm for me "
+      );
+    }
+  }
+}
+// AtmMachineSimulator();
