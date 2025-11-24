@@ -551,7 +551,7 @@ function doMaths(value1, value2) {
 // checkAge(10);
 
 //  (array methods)
-items = ["shoe", "bags", "clothes"];
+// items = ["shoe", "bags", "clothes"];
 // itemS.pop();
 
 // pop() remove from the end of an array
@@ -737,4 +737,131 @@ function AtmMachineSimulator() {
     }
   }
 }
+
 // AtmMachineSimulator();
+
+// callback funtion
+// basic callBack function
+// function greetPerson(name) {
+//   console.log(`hello ${name}`);
+// }
+
+// function processName(callBack) {
+//   const myName = "promise";
+//   callBack(myName);
+
+// }
+
+// processName(greetPerson);
+// setTimeOut delays its callbackFuntion depending on the provided time given or set
+// setTimeout(() => {
+//   console.log("how are you doing ");
+// }, 5000);
+
+// cook rice
+
+// function cookRice(done) {
+//   console.log("Cooking rice ......");
+//   setTimeout(() => {
+//     done();
+//   }, 2000);
+// }
+
+// function serve() {
+//   console.log("Rice is ready to eat");
+// }
+
+// array method
+// forEach method
+// map
+// date and time object
+// swithes
+
+// let iteMs = ["one", "two", "three", "four"];
+// iteMs.forEach((item) => {
+//   if (item === "one") {
+//     console.log(item);
+//   }
+//   if (item === "two") {
+//     console.log(item);
+//   }
+//   if (item === "three") {
+//     cookRice(serve);
+//   }
+//   if (item === "four") {
+//     console.log(item);
+//   }
+// });
+
+// map
+let numbers = [1, 2, 3, 4];
+// let result = numbers.map((value) => value * 2).find((val) => val > 2);
+
+// console.log(result);
+
+// const stundent = [
+//   { name: "promise", age: 20 },
+//   { name: "Evidence", age: 59 },
+//   { name: "Micheal", age: 20 },
+// ];
+
+// const names = stundent.map((person) => person.age);
+// console.log(names);
+
+// date object
+
+let date = new Date();
+// date = date.getDate();
+// date = date.getTime(); returns in milliseconds
+// date = date.getFullYear();
+// date = Date.now(); reurns exact time in milliseconds
+// date = date.toLocaleDateString();
+// date = date.toLocaleTimeString();
+// date = date.getDay();
+// date = date.getMonth();
+// date = date.
+// console.log(date);
+
+// switches
+// let color = "red";
+// color = "blue";
+// switch (color) {
+//   case "red":
+//     console.log("the color is red now");
+//     break;
+//   case "blue":
+//     console.log("the color is blue");
+//     break;
+
+//   default:
+//     console.log("the color dont exist");
+//     break;
+// }
+
+// let today = new Date().getDay();
+
+// switch (today) {
+//   case 0:
+//     console.log("sunday");
+//     break;
+//   case 1:
+//     console.log("monday");
+//     break;
+//   case 2:
+//     console.log("tuesday");
+//     break;
+//   case 3:
+//     console.log("wednesday");
+//     break;
+//   case 4:
+//     console.log("thursday");
+//     break;
+//   case 5:
+//     console.log("friday");
+//     break;
+//   case 6:
+//     console.log("saturday");
+//     break;
+//   default:
+//     console.log("sorry there's a problem please check the code again");
+// }
