@@ -865,3 +865,70 @@ let date = new Date();
 //   default:
 //     console.log("sorry there's a problem please check the code again");
 // }
+// DOM (document object module) is now javascript sees your webpage
+// every html becomes an object which can be changed , selected , added , removed also event(actions) on the html page can be listened to in other to programe a response on the webpage
+
+// create elements
+
+// select
+// change
+// add
+// remove
+// listen for event
+
+// creating elements
+let item = document.createElement("h1");
+let div = document.createElement("div");
+let aTag = document.createElement("a");
+
+// aTag.setAttribute("href", "www.facebook.com");
+// aTag.setAttribute("id", "atageId");
+// aTag.setAttribute("class", "tag");
+// aTag.removeAttribute("class");
+
+aTag.className = "atag";
+aTag.href = "www.Facebook.com";
+aTag.id = "aTagId";
+
+let image = document.createElement("img");
+let input = document.createElement("input");
+console.log(input);
+
+// aTag.innerText = "hello world";
+// aTag.textContent = "hello world";
+// aTag.innerHTML = "hello world";
+
+input.placeholder = "firstname";
+input.id = "inputId";
+input.className = "inputClass";
+
+// image.src = '/app.jpeg
+// image.setAttribute("scr", "/app.jpg");
+
+// apending inserting a tag into another tag
+
+let form = document.createElement("form");
+
+let userNameLabel = document.createElement("label");
+let userNameInput = document.createElement("input");
+let subMit = document.createElement("button");
+
+userNameLabel.setAttribute("for", "userName");
+userNameLabel.textContent = "Username";
+
+userNameInput.id = "userName";
+userNameInput.placeholder = "username";
+
+subMit.textContent = "Submit";
+
+form.append(userNameLabel);
+form.append(userNameInput);
+form.append(subMit);
+
+console.log(form);
+
+document.body.appendChild(form);
+
+// console.log(aTag);
+
+// email, phoneNumber, password
