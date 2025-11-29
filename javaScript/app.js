@@ -733,8 +733,9 @@ function AtmMachineSimulator() {
     } else {
       alert(
         "Invalid option , please carry your wahala and go dont come and spoil my atm for me "
-      );
+      )
+  return;
     }
   }
 }
-// AtmMachineSimulator();
+AtmMachineSimulator();
