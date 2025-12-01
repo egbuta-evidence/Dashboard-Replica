@@ -1059,3 +1059,6 @@ formContianer.appendChild(title);
 formContianer.appendChild(form);
 
 app.appendChild(formContianer);
+
+// app placeholder to all the inputs
+// and one more input
