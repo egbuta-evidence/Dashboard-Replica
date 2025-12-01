@@ -964,6 +964,7 @@ let date = new Date();
 
 // Get container
 const app = document.getElementById("app");
+console.log(app);
 
 // create a form wrapper
 const formContianer = document.createElement("div");
