@@ -877,58 +877,184 @@ let date = new Date();
 // listen for event
 
 // creating elements
-let item = document.createElement("h1");
-let div = document.createElement("div");
-let aTag = document.createElement("a");
+// let item = document.createElement("h1");
+// let div = document.createElement("div");
+// let aTag = document.createElement("a");
 
 // aTag.setAttribute("href", "www.facebook.com");
 // aTag.setAttribute("id", "atageId");
 // aTag.setAttribute("class", "tag");
 // aTag.removeAttribute("class");
 
-aTag.className = "atag";
-aTag.href = "www.Facebook.com";
-aTag.id = "aTagId";
+// aTag.className = "atag";
+// aTag.href = "www.Facebook.com";
+// aTag.id = "aTagId";
 
-let image = document.createElement("img");
-let input = document.createElement("input");
-console.log(input);
+// let image = document.createElement("img");
+// let input = document.createElement("input");
+// console.log(input);
 
 // aTag.innerText = "hello world";
 // aTag.textContent = "hello world";
 // aTag.innerHTML = "hello world";
 
-input.placeholder = "firstname";
-input.id = "inputId";
-input.className = "inputClass";
+// input.placeholder = "firstname";
+// input.id = "inputId";
+// input.className = "inputClass";
 
 // image.src = '/app.jpeg
 // image.setAttribute("scr", "/app.jpg");
 
 // apending inserting a tag into another tag
 
-let form = document.createElement("form");
+// let form = document.createElement("form");
 
-let userNameLabel = document.createElement("label");
-let userNameInput = document.createElement("input");
-let subMit = document.createElement("button");
+// let userNameLabel = document.createElement("label");
+// let userNameInput = document.createElement("input");
+// let subMit = document.createElement("button");
 
-userNameLabel.setAttribute("for", "userName");
-userNameLabel.textContent = "Username";
+// userNameLabel.setAttribute("for", "userName");
+// userNameLabel.textContent = "Username";
 
-userNameInput.id = "userName";
-userNameInput.placeholder = "username";
+// userNameInput.id = "userName";
+// userNameInput.placeholder = "username";
 
-subMit.textContent = "Submit";
+// subMit.textContent = "Submit";
 
-form.append(userNameLabel);
-form.append(userNameInput);
-form.append(subMit);
+// form.append(userNameLabel);
+// form.append(userNameInput);
+// form.append(subMit);
 
-console.log(form);
-
-document.body.appendChild(form);
+// document.body.appendChild(form);
 
 // console.log(aTag);
 
 // email, phoneNumber, password
+
+// get element by id
+// let heading = document.getElementById("greetings");
+// heading.textContent = "hello world";
+// heading.style.textAlign = "center";
+// heading.style.color = "red";
+// heading.style.backgroundColor = "purple";
+
+// get element by class Names
+// let items = document.getElementsByClassName("note");
+
+//  get element by tagname
+// let buttons = document.getElementsByTagName("button");
+// console.log(buttons);
+
+// universal selection querySelector()
+
+// let header = document.querySelectorAll(".note");
+
+// let newHeader = Array.from(header);
+// console.log(newHeader);
+// newHeader.forEach((item) => {
+//   if (item.textContent === "note 1") {
+//     console.log(item);
+//   }
+// });
+
+// console.log(header);
+// console.log(items);
+
+// Mini form project
+
+// Get container
+const app = document.getElementById("app");
+
+// create a form wrapper
+const formContianer = document.createElement("div");
+
+// style form wapper
+formContianer.style.width = "400px";
+formContianer.style.margin = "50px auto";
+formContianer.style.padding = "30px";
+formContianer.style.borderRadius = "12px";
+formContianer.style.backgroundColor = "#f5f5f5";
+formContianer.style.boxShadow = "0 4px 10px black";
+
+// adding a title/heading
+const title = document.createElement("h2");
+// addind text to the title
+title.textContent = "Registration Form";
+
+// adding style to title
+title.style.textAlign = "center";
+title.style.marginBottom = "20px";
+title.style.fontFamily = "Ariel";
+
+// create form element
+const form = document.createElement("form");
+
+// add styling to form
+form.style.display = "flex";
+form.style.flexDirection = "column";
+form.style.gap = "5px";
+
+// helper function to create form input
+function createInputforMe(textLabel, type) {
+  // create input container
+  const contianer = document.createElement("div");
+  // style
+  contianer.style.display = "flex";
+  contianer.style.flexDirection = "column";
+
+  // create label
+  const label = document.createElement("label");
+
+  // style label
+  label.textContent = textLabel;
+  label.style.fontSize = "15px";
+  label.style.marginBottom = "5px";
+
+  // create input
+  const input = document.createElement("input");
+  input.type = type;
+
+  // style input
+  input.style.padding = "10px";
+  input.style.fontSize = "16px";
+  input.style.fontWeight = "600";
+  input.style.border = "1px solid #ccc";
+  input.style.borderRadius = "5px";
+  input.style.outline = "none";
+
+  contianer.appendChild(label);
+  contianer.appendChild(input);
+
+  return contianer;
+}
+
+// create form fields
+
+const nameInput = createInputforMe("Full Name", "text");
+const emailInput = createInputforMe("Email Address", "email");
+const passwordInput = createInputforMe("Password", "password");
+
+// create submit button
+const button = document.createElement("button");
+button.textContent = "Submit";
+
+// style button
+button.style.padding = "12px";
+button.style.fontSize = "1rem";
+button.style.border = "none";
+button.style.borderRadius = "8px";
+button.style.backgroundColor = "blue";
+button.style.color = "white";
+button.style.cursor = "pointer";
+
+// append everything
+
+form.appendChild(nameInput);
+form.appendChild(emailInput);
+form.appendChild(passwordInput);
+form.appendChild(button);
+
+formContianer.appendChild(title);
+formContianer.appendChild(form);
+
+app.appendChild(formContianer);
