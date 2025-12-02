@@ -4,7 +4,7 @@
 // varaible declartion
 // data Types
 
-console.log("hello Evidence  good to have you today"); // any variable that has a bracket beside it is called a method
+// console.log("hello Evidence  good to have you today"); // any variable that has a bracket beside it is called a method
 
 // console.log(1 + 1);
 
@@ -63,111 +63,111 @@ console.log("hello Evidence  good to have you today"); // any variable that has 
 // Primitive data types - simple and straightfoward
 // String == anything you put in a single or double quote  " ",, ' '
 
-let name = "12212323230-==@+_=";
+// let name = "12212323230-==@+_=";
 
-console.log(typeof name);
+// console.log(typeof name);
 
 // number
-let value = 32.0;
-console.log(typeof value);
+// let value = 32.0;
+// console.log(typeof value);
 
 // boolean = is a true or false statement
 
-let example = 4 > 3;
+// let example = 4 > 3;
 
-let itsConfirmed = false;
+// let itsConfirmed = false;
 
-console.log(typeof example);
+// console.log(typeof example);
 
 // undefined ==  when a variable is not assigned to any value
 
-let test;
+// let test;
 
-console.log(typeof test);
+// console.log(typeof test);
 
 // null == empty on pupose or intentional emptiness
-let time = null;
+// let time = null;
 
-//  bigInt
-let bigNumber = 12234344848949940n;
-bigNumber = BigInt(123454832934823829292939299999);
+// //  bigInt
+// let bigNumber = 12234344848949940n;
+// bigNumber = BigInt(123454832934823829292939299999);
 
-console.log(typeof bigNumber);
+// console.log(typeof bigNumber);
 
 // non - promitive (reference types ) -more complex "eg objects arrays"
 
 // object === ans object is a make up of properties
 
-const continent = {
-  africa: {
-    countries: {
-      west: ["Nigeria", "Ghana"],
-      south: ["South-africa"],
-    },
-  },
-  asia: {
-    countries: {
-      west: ["China", "India"],
-      south: ["Mongolia"],
-    },
-  },
-};
-continent.africa.countries.west[2] = "Tanzania";
+// const continent = {
+//   africa: {
+//     countries: {
+//       west: ["Nigeria", "Ghana"],
+//       south: ["South-africa"],
+//     },
+//   },
+//   asia: {
+//     countries: {
+//       west: ["China", "India"],
+//       south: ["Mongolia"],
+//     },
+//   },
+// };
+// continent.africa.countries.west[2] = "Tanzania";
 // object
 
 // array is a java script property that allows the storage of multiple value to a single variable
-const item = [
-  "bags",
-  "shoes",
-  "clothes",
-  1,
-  false,
-  { name: "promise", age: 10 },
-  null,
-];
+// const item = [
+//   "bags",
+//   "shoes",
+//   "clothes",
+//   1,
+//   false,
+//   { name: "promise", age: 10 },
+//   null,
+// ];
 // let result = item;
 
-item[7] = "Evidence";
+// item[7] = "Evidence";
 
 // console.log(result);
 
 //  objects and arrays
 
-let items = ["shoes", "bags", "clothes"];
+// let items = ["shoes", "bags", "clothes"];
 
-items[3] = "ring";
+// items[3] = "ring";
 
 // console.log(items);
 
 // console.log(items[1]);
 
 // spread operator
-let fruits = ["mango", "apples", "banana"];
+// let fruits = ["mango", "apples", "banana"];
 
-let girs = ["destiny", "favour", "Evidence"];
-let boys = ["james", "obi", "charles"];
+// let girs = ["destiny", "favour", "Evidence"];
+// let boys = ["james", "obi", "charles"];
 
-let reSult = [...girs, ...boys];
+// let reSult = [...girs, ...boys];
 
 // console.log(reSult);
 
-let newFruites = [...fruits, "watermelon"];
+// let newFruites = [...fruits, "watermelon"];
 
-let person = {
-  name: "Promise",
-  isOutstanding: true,
-  age: 15,
-  status: null,
-};
+// let person = {
+//   name: "Promise",
+//   isOutstanding: true,
+//   age: 15,
+//   status: null,
+// };
 
-let siblings = {
-  brother: "james",
-  sister: "Amaka",
-};
+// let siblings = {
+//   brother: "james",
+//   sister: "Amaka",
+// };
 
-let newPerson = { ...person, ...siblings };
+// let newPerson = { ...person, ...siblings };
 
-let changedPerson = { ...newPerson, accountBalance: BigInt(21828283838282) };
+// let changedPerson = { ...newPerson, accountBalance: BigInt(21828283838282) };
 
 // the delete helps remove an value form the object property
 // delete person.sex;
@@ -190,7 +190,7 @@ let changedPerson = { ...newPerson, accountBalance: BigInt(21828283838282) };
 // array methods
 // object methods
 
-let val; // undefined
+// let val; // undefined
 // camel casing
 
 // let #name = '' wrong
@@ -432,17 +432,17 @@ let val; // undefined
 
 // console.log(result);
 
-function doMaths(value1, value2) {
-  const add = value1 + value2;
-  const divide = value1 / value2;
-  const random = Math.floor(Math.random() * value1);
-  const subtract = value1 - value2;
-  const squareRoot = Math.sqrt(value1);
-  return random;
-}
+// function doMaths(value1, value2) {
+//   const add = value1 + value2;
+//   const divide = value1 / value2;
+//   const random = Math.floor(Math.random() * value1);
+//   const subtract = value1 - value2;
+//   const squareRoot = Math.sqrt(value1);
+//   return random;
+// }
 
-result = doMaths(10, 20);
-console.log(result);
+// result = doMaths(10, 20);
+// console.log(result);
 
 // funtion
 
@@ -699,44 +699,44 @@ console.log(result);
 // project
 // atm simulator
 
-function AtmMachineSimulator() {
-  let balance = 5000;
-  let running = true;
+// function AtmMachineSimulator() {
+//   let balance = 5000;
+//   let running = true;
 
-  while (running) {
-    let option = prompt(
-      "WELCOME TO EVIDENCE MONEY MAKING MACHINE:\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit"
-    );
-    if (option === "1") {
-      alert(`Your balance is #${balance}`);
-    } else if (option === "2") {
-      let amount = Number(prompt("Enter amount to deposit"));
-      if (amount > 0) {
-        balance += amount;
-        alert(`Deposit  successful! New balance : #${balance}`);
-      } else {
-        alert("Invalid deposit amount");
-      }
-    } else if (option === "3") {
-      let amount = Number(prompt("Enter amount to withdraw"));
-      if (amount <= 0) {
-        alert("Invalid withdrawal amount");
-      } else if (amount > balance) {
-        alert("Insufficient funds!");
-      } else {
-        balance -= amount;
-        alert(`Widthdrawal successful! New balance: #${balance}`);
-      }
-    } else if (option === "4") {
-      alert("Thank you for using Evidence Atm machine");
-      running = false;
-    } else {
-      alert(
-        "Invalid option , please carry your wahala and go dont come and spoil my atm for me "
-      );
-    }
-  }
-}
+//   while (running) {
+//     let option = prompt(
+//       "WELCOME TO EVIDENCE MONEY MAKING MACHINE:\n1. Check Balance\n2. Deposit\n3. Withdraw\n4. Exit"
+//     );
+//     if (option === "1") {
+//       alert(`Your balance is #${balance}`);
+//     } else if (option === "2") {
+//       let amount = Number(prompt("Enter amount to deposit"));
+//       if (amount > 0) {
+//         balance += amount;
+//         alert(`Deposit  successful! New balance : #${balance}`);
+//       } else {
+//         alert("Invalid deposit amount");
+//       }
+//     } else if (option === "3") {
+//       let amount = Number(prompt("Enter amount to withdraw"));
+//       if (amount <= 0) {
+//         alert("Invalid withdrawal amount");
+//       } else if (amount > balance) {
+//         alert("Insufficient funds!");
+//       } else {
+//         balance -= amount;
+//         alert(`Widthdrawal successful! New balance: #${balance}`);
+//       }
+//     } else if (option === "4") {
+//       alert("Thank you for using Evidence Atm machine");
+//       running = false;
+//     } else {
+//       alert(
+//         "Invalid option , please carry your wahala and go dont come and spoil my atm for me "
+//       );
+//     }
+//   }
+// }
 
 // AtmMachineSimulator();
 
@@ -794,7 +794,7 @@ function AtmMachineSimulator() {
 // });
 
 // map
-let numbers = [1, 2, 3, 4];
+// let numbers = [1, 2, 3, 4];
 // let result = numbers.map((value) => value * 2).find((val) => val > 2);
 
 // console.log(result);
@@ -810,7 +810,7 @@ let numbers = [1, 2, 3, 4];
 
 // date object
 
-let date = new Date();
+// let date = new Date();
 // date = date.getDate();
 // date = date.getTime(); returns in milliseconds
 // date = date.getFullYear();
@@ -877,30 +877,30 @@ let date = new Date();
 // listen for event
 
 // creating elements
-let item = document.createElement("h1");
-let div = document.createElement("div");
-let aTag = document.createElement("a");
+// let item = document.createElement("h1");
+// let div = document.createElement("div");
+// let aTag = document.createElement("a");
 
 // aTag.setAttribute("href", "www.facebook.com");
 // aTag.setAttribute("id", "atageId");
 // aTag.setAttribute("class", "tag");
 // aTag.removeAttribute("class");
 
-aTag.className = "atag";
-aTag.href = "www.Facebook.com";
-aTag.id = "aTagId";
+// aTag.className = "atag";
+// aTag.href = "www.Facebook.com";
+// aTag.id = "aTagId";
 
-let image = document.createElement("img");
-let input = document.createElement("input");
-console.log(input);
+// let image = document.createElement("img");
+// let input = document.createElement("input");
+// console.log(input);
 
 // aTag.innerText = "hello world";
 // aTag.textContent = "hello world";
 // aTag.innerHTML = "hello world";
 
-input.placeholder = "firstname";
-input.id = "inputId";
-input.className = "inputClass";
+// input.placeholder = "firstname";
+// input.id = "inputId";
+// input.className = "inputClass";
 
 // image.src = '/app.jpeg
 // image.setAttribute("scr", "/app.jpg");
@@ -911,6 +911,16 @@ let form = document.createElement("form");
 
 let userNameLabel = document.createElement("label");
 let userNameInput = document.createElement("input");
+
+let phoneNumberLabel = document.createElement("label")
+let phoneNumberInput = document.createElement("input")
+
+let passwordLabel = document.createElement("label")
+let passwordInput = document.createElement("input")
+
+let emailLabel = document.createElement("label")
+let emailInput = document.createElement("input")
+
 let subMit = document.createElement("button");
 
 userNameLabel.setAttribute("for", "userName");
@@ -919,11 +929,32 @@ userNameLabel.textContent = "Username";
 userNameInput.id = "userName";
 userNameInput.placeholder = "username";
 
+phoneNumberLabel.setAttribute("for, phoneNumber")
+phoneNumberLabel.textContent = "Phone Number"
+
+passwordLabel.setAttribute("for, password")
+passwordLabel.textContent = "Password"
+
+passwordLabel.id = "password";
+passwordLabel.placeholder = "***********"
+
+emailLabel.setAttribute("for, email")
+emailLabel.textContent = "Email"
+
+emailLabel.id = "email";
+emailLabel.placeholder = "eg@gmail.com"
+
 subMit.textContent = "Submit";
 
-form.append(userNameLabel);
-form.append(userNameInput);
-form.append(subMit);
+form.appendChild(userNameLabel);
+form.appendChild(userNameInput);
+form.appendChild(phoneNumberLabel);
+form.appendChild(phoneNumberInput);
+form.appendChild(passwordLabel);
+form.appendChild(passwordInput);
+form.appendChild(emailLabel);
+form.appendChild(emailInput);
+form.appendChild(subMit);
 
 console.log(form);
 
@@ -932,3 +963,5 @@ document.body.appendChild(form);
 // console.log(aTag);
 
 // email, phoneNumber, password
+
+
