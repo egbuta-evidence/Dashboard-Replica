@@ -907,61 +907,26 @@
 
 // apending inserting a tag into another tag
 
-let form = document.createElement("form");
+// let form = document.createElement("form");
 
 let userNameLabel = document.createElement("label");
 let userNameInput = document.createElement("input");
-
-let phoneNumberLabel = document.createElement("label")
-let phoneNumberInput = document.createElement("input")
-
-let passwordLabel = document.createElement("label")
-let passwordInput = document.createElement("input")
-
-let emailLabel = document.createElement("label")
-let emailInput = document.createElement("input")
-
 let subMit = document.createElement("button");
 
-userNameLabel.setAttribute("for", "userName");
-userNameLabel.textContent = "Username";
+// userNameLabel.setAttribute("for", "userName");
+// userNameLabel.textContent = "Username";
 
 userNameInput.id = "userName";
 userNameInput.placeholder = "username";
 
-phoneNumberLabel.setAttribute("for, phoneNumber")
-phoneNumberLabel.textContent = "Phone Number"
+// subMit.textContent = "Submit";
 
-passwordLabel.setAttribute("for, password")
-passwordLabel.textContent = "Password"
+form.append(userNameLabel);
+form.append(userNameInput);
+form.append(subMit);
 
-passwordLabel.id = "password";
-passwordLabel.placeholder = "***********"
-
-emailLabel.setAttribute("for, email")
-emailLabel.textContent = "Email"
-
-emailLabel.id = "email";
-emailLabel.placeholder = "eg@gmail.com"
-
-subMit.textContent = "Submit";
-
-form.appendChild(userNameLabel);
-form.appendChild(userNameInput);
-form.appendChild(phoneNumberLabel);
-form.appendChild(phoneNumberInput);
-form.appendChild(passwordLabel);
-form.appendChild(passwordInput);
-form.appendChild(emailLabel);
-form.appendChild(emailInput);
-form.appendChild(subMit);
-
-console.log(form);
-
-document.body.appendChild(form);
+// document.body.appendChild(form);
 
 // console.log(aTag);
 
 // email, phoneNumber, password
-
-
